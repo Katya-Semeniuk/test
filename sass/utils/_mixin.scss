@@ -1,0 +1,11 @@
+
+@mixin flex-set ($type, $mainAxis, $minorAxis){
+display: $type;
+justify-content: $mainAxis;
+align-items: $minorAxis;
+}
+
+@mixin flex ($type, $gapSize){
+display: $type;
+gap: $gapSize;
+}

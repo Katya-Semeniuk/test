@@ -1,0 +1,90 @@
+.team {
+  padding: 60px 0;
+  background-color: $bgSectionColor;
+
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
+}
+
+.team-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.84px;
+  text-align: center;
+  color: $mainTextColor;
+
+  @media screen and (min-width: $desktop) {
+font-size: 36px;
+margin-bottom: 50px;
+letter-spacing: 1.08px;
+  }
+}
+
+.team-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.team-item {
+  background-color: $whiteColor;
+  padding-bottom: 24px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+
+  @media screen and (min-width:$tablet) {
+    flex-basis: calc((100% - 30px) /2 ); 
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 90px) /4 );
+  }
+}
+
+
+.team-subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+  text-align: center;
+  color: $mainTextColor;
+}
+
+.team-desc {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+  text-align: center;
+  color: $secondTextColor;
+}
+
+.team-socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.team-link {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  fill: $socialsBrandColor;
+  transition: fill 550ms cubic-bezier(0.4, 0, 0.2, 1), 
+  background-color 550ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+    fill: $whiteColor;
+  }
+}

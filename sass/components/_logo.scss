@@ -1,0 +1,32 @@
+.header-logo{ 
+font-family: $secondaryFont;
+font-size: 24px;
+font-weight: 700;
+line-height: 1.4;
+letter-spacing: 0.72px;
+color: $mainTextColor;
+}
+
+.header-accent{
+  color: $accentColor;  
+}
+
+.footer-logo {
+  display: block;
+  color: $whiteColor;
+  text-align: center;
+  font-family: $secondaryFont;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.72px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+     letter-spacing: 0.78px;
+  }
+}
+
+.footer-accent {
+  color: $accentColor;
+}
